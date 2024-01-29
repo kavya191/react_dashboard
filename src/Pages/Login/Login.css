@@ -1,0 +1,72 @@
+.column1 {
+    float: left;
+    width: 50%;
+    background: #605BFF;
+
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+    background: #F8FAFF;
+    font-family: Montserrat;
+   
+
+
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 10rem;
+    margin: 10px;
+}
+.para{
+    font-family: Lato;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
+margin: 10px;
+
+}
+.btn_style{
+    display: flex;
+    margin: 10px;
+    padding-right: 10px;
+}
+.apple_btn{
+    margin-left: 1rem;
+    /* width: 200px; */
+    width: 197.6px;
+height: 32.93px;
+top: 338.51px;
+left: 1038.22px;
+background: white;
+border: none;
+color: #000000;
+
+}
+.google_btn{
+    /* width: 200px; */
+    width: 197.6px;
+height: 32.93px;
+top: 338.51px;
+left: 813.18px;
+background: white;
+border: none;
+color: #000000;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
