@@ -85,12 +85,12 @@
     height: 350px;
     /* top: 224px;
 left: 159px; */
-background: #F8FAFF;
+    background: #F8FAFF;
 
 }
-.login_input{
+
+.login_input {
     border: 1px solid #999999
-    
 }
 
 .login_bttn {
@@ -104,5 +104,90 @@ background: #F8FAFF;
 Button {
     width: 350px;
     background-color: #605BFF;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .column1 {
+        float: left;
+        width: 100%;
+        background: #605BFF;
+
+    }
+
+    .column2 {
+        float: left;
+        width: 100%;
+        background: #F8FAFF;
+        font-family: Montserrat;
+    }
+
+    .title {
+        /* font-size: 36px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: left; */
+        /* padding-top: 10rem; */
+        margin-left: 10px;
+    }
+
+    .para {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000000;
+        margin-left: 10px;
+
+    }
+
+    .btn_style {
+        display: flex;
+        justify-content: center;
+        /* margin: 10px; */
+        /* padding-right: 10px; */
+    }
+
+    .google_btn {
+        width: 100%;
+
+        height: max-content;
+
+
+        background: white;
+        border: none;
+        color: #000000;
+        border-radius: 0.75rem;
+        margin-left: 1rem;
+
+    }
+
+    .apple_btn {
+
+        width: 100%;
+
+        height: max-content;
+
+        margin-top: 1rem;
+        background: white;
+        border: none;
+        color: #000000;
+        border-radius: 0.75rem;
+    }
+
+    .login_form {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-bottom: 5rem;
+        width: 350px;
+        height: 350px;
+        /* top: 224px;
+    left: 159px; */
+        background: #F8FAFF;
+
+    }
 
 }
