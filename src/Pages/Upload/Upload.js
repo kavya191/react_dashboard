@@ -121,9 +121,9 @@ function Upload() {
 
         <table class="table table-striped">
           <thead>
-            <tr key={"header"} >
+            <tr key={"header"}>
               {headerKeys.map((key) => (
-                <th key={key}  scope="col" >
+                <th key={key} scope="col">
                   {key}
                 </th>
               ))}
@@ -132,7 +132,6 @@ function Upload() {
           <tbody>
             {csvArray.map((item) => (
               <tr key={item.id}>
-              
                 {Object.values(item).map((val, index) => (
                   <td key={index}>{val}</td>
                 ))}

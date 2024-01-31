@@ -4,10 +4,23 @@ import { Button, Form } from "react-bootstrap";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
+import { SiTwitter } from "react-icons/si";
+import { FaLinkedinIn } from "react-icons/fa";
+import { BiJoystick } from "react-icons/bi";
 const Login = () => {
   return (
     <section className="row">
-      <div className="column1"></div>
+      <div className="column1">
+
+        <h1 className="base_div">Base</h1>
+        <div className="icons_style">
+        <FaGithub className="git_icon" />
+        <SiTwitter  className="git_icon" />
+        <FaLinkedinIn className="git_icon" />
+        <BiJoystick  className="git_icon"/>
+        </div>
+      </div>
       <div className="column2">
         <h2 className="title">Sign In</h2>
         <h4 className="para">Sign in to your account</h4>

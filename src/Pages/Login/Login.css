@@ -1,19 +1,48 @@
-.column1 {
-    float: left;
-    width: 50%;
-    background: #605BFF;
-
+.row {
+    position: relative;
 }
 
+.column1,
 .column2 {
     float: left;
     width: 50%;
-    background: #F8FAFF;
-    font-family: Montserrat;
-
-
-
+    position: relative;
 }
+
+.column1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: #605BFF;
+    clip-path: polygon(0 0, 100% 0, 0 300%);
+    z-index: -1;
+}
+
+.column2 {
+    z-index: 1;
+
+    padding-left: 10px;
+}
+
+.base_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 20rem;
+    font-family: Montserrat;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+}
+
 
 .title {
     font-size: 36px;
@@ -37,6 +66,20 @@
 
 }
 
+.icons_style {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+}
+
+.git_icon {
+    margin-right: 1rem;
+    font-size: 22px;
+    color: white;
+}
+
 .btn_style {
     display: flex;
     margin: 10px;
@@ -45,7 +88,7 @@
 
 .apple_btn {
     margin-left: 1rem;
-    /* width: 200px; */
+
     width: 197.6px;
     height: 32.93px;
     top: 338.51px;
@@ -58,7 +101,7 @@
 }
 
 .google_btn {
-    /* width: 200px; */
+
     width: 197.6px;
     height: 32.93px;
     top: 338.51px;
@@ -70,7 +113,6 @@
 
 }
 
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
@@ -83,8 +125,7 @@
     margin-bottom: 5rem;
     width: 350px;
     height: 350px;
-    /* top: 224px;
-left: 159px; */
+
     background: #F8FAFF;
 
 }
@@ -98,6 +139,7 @@ left: 159px; */
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+    background: #605BFF;
 
 }
 
@@ -107,11 +149,14 @@ Button {
 
 }
 
+
+
 @media only screen and (max-width: 600px) {
     .column1 {
         float: left;
         width: 100%;
         background: #605BFF;
+        height: 80px;
 
     }
 
@@ -123,13 +168,8 @@ Button {
     }
 
     .title {
-        /* font-size: 36px;
-        font-weight: 700;
-        line-height: 44px;
-        letter-spacing: 0em;
-        text-align: left; */
-        /* padding-top: 10rem; */
-        margin-left: 10px;
+
+        margin-left: 15px;
     }
 
     .para {
@@ -140,15 +180,14 @@ Button {
         letter-spacing: 0em;
         text-align: left;
         color: #000000;
-        margin-left: 10px;
+        margin-left: 15px;
 
     }
 
     .btn_style {
         display: flex;
         justify-content: center;
-        /* margin: 10px; */
-        /* padding-right: 10px; */
+
     }
 
     .google_btn {
@@ -184,9 +223,24 @@ Button {
         margin-bottom: 5rem;
         width: 350px;
         height: 350px;
-        /* top: 224px;
-    left: 159px; */
+
         background: #F8FAFF;
+
+    }
+
+    .base_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 20rem;
+
+        font-family: Montserrat;
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 88px;
+        letter-spacing: 0em;
+        text-align: left;
 
     }
 
